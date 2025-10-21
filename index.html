@@ -190,6 +190,74 @@
     o consórcio te faz <strong>planejar e investir</strong> para conquistar o bem com economia e estratégia, 
     com a segurança de quem opera com a <strong>marca Caixa Econômica Federal</strong>.
   </p>
+
+      <!-- INÍCIO: Simulações (somente página 1, sem download) -->
+<section class="wrap" id="simulacoes">
+  <h2>Exemplos reais de simulações</h2>
+  <p class="muted">Abaixo você visualiza simulações reais de cartas de consórcio com taxa de administração reduzida. Exibição apenas para consulta neste site.</p>
+
+  <div class="cards" style="margin-top:14px">
+    <!-- SIMULAÇÃO 200k -->
+    <div class="card">
+      <h3>Carta de R$ 200.000</h3>
+      <img class="sim-img" src="sim_200k_p1.png" alt="Simulação consórcio 200 mil (página 1)" loading="lazy" />
+      <p class="small muted" style="margin-top:8px">Simulação ilustrativa. Condições sujeitas a alterações conforme campanhas e regulamentos vigentes.</p>
+    </div>
+
+    <!-- SIMULAÇÃO 400k -->
+    <div class="card">
+      <h3>Carta de R$ 400.000</h3>
+      <img class="sim-img" src="sim_400k_p1.png" alt="Simulação consórcio 400 mil (página 1)" loading="lazy" />
+      <p class="small muted" style="margin-top:8px">Simulação ilustrativa. Condições sujeitas a alterações conforme campanhas e regulamentos vigentes.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Modal para zoom (sem download) -->
+<div id="simModal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.7);z-index:9999;align-items:center;justify-content:center;padding:16px">
+  <div style="position:relative;max-width:1200px;width:100%;background:#000;border-radius:12px;overflow:hidden">
+    <button onclick="closeSimModal()" style="position:absolute;right:8px;top:8px;border:none;background:rgba(255,255,255,.9);border-radius:999px;padding:6px 10px;cursor:pointer;font-weight:700">✕</button>
+    <img id="simFull" src="" alt="Visualização da simulação" style="width:100%;height:auto;display:block" draggable="false" />
+  </div>
+</div>
+
+<style>
+  .sim-img{
+    width:100%; height:auto; border:1px solid var(--border);
+    border-radius:12px; box-shadow:var(--shadow);
+    user-select:none; -webkit-user-drag:none; cursor:zoom-in;
+  }
+</style>
+
+<script>
+  // Abre modal de zoom ao clicar na imagem (sem link/sem download)
+  document.addEventListener('click', function(e){
+    const img = e.target.closest('.sim-img');
+    if(!img) return;
+    const modal = document.getElementById('simModal');
+    const full = document.getElementById('simFull');
+    full.src = img.src; // mesma imagem em tamanho maior
+    modal.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+  });
+  function closeSimModal(){
+    const modal = document.getElementById('simModal');
+    const full = document.getElementById('simFull');
+    full.src = '';
+    modal.style.display = 'none';
+    document.body.style.overflow = '';
+  }
+
+  // Pequenas barreiras contra clique direito / arrastar
+  document.addEventListener('contextmenu', function(e){
+    if(e.target.closest('.sim-img')) e.preventDefault();
+  });
+  document.addEventListener('dragstart', function(e){
+    if(e.target.closest('.sim-img')) e.preventDefault();
+  });
+</script>
+<!-- FIM: Simulações -->
+      
 </section>
 
     <!-- CONTATO COM MICROSOFT FORMS EMBED -->
@@ -259,5 +327,6 @@
   </script>
 </body>
 </html>
+
 
 
