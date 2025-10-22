@@ -64,6 +64,27 @@
     @media (max-width:980px){.hero{grid-template-columns:1fr;padding:var(--s-9) 0}.cards{grid-template-columns:1fr}.kpis{grid-template-columns:1fr 1fr}.iframe-wrap{height:900px}}
     @media (max-width:560px){.kpis{grid-template-columns:1fr}.iframe-wrap{height:980px}}
   </style>
+  <style>
+  /* OVERRIDES – forçam o tema premium a prevalecer */
+  :root{
+    --bg:#F8FAFC; --surface:#FFFFFF; --ink:#0B1220; --muted-ink:#5B6473; --border:#E5E7EB;
+    --blue:#0E3A5F; --blue-2:#1C4E80; --accent:#F59E0B; --accent-ink:#1A1300; --success:#22C55E; --section-alt:#F3F6FA;
+    --container:1160px;
+  }
+  html,body{ background:var(--bg) !important; color:var(--ink) !important; font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif !important; }
+  h1{ color:var(--blue) !important; font-family:"Poppins",Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif !important; letter-spacing:-.02em !important; }
+  header{ background:linear-gradient(180deg,rgba(14,58,95,.06),#fff) !important; border-bottom:1px solid var(--border) !important; }
+  section{ padding:56px 0 !important; border-bottom:1px solid var(--border) !important; background:var(--surface) !important; }
+  .section--alt{ background:var(--section-alt) !important; }
+
+  .panel,.card{ background:var(--surface) !important; border:1px solid var(--border) !important; border-radius:16px !important; box-shadow:0 10px 30px rgba(12,24,46,.10) !important; padding:28px !important; }
+  .cards{ display:grid !important; gap:24px !important; grid-template-columns:repeat(3,1fr) !important; }
+  .muted{ color:var(--muted-ink) !important; }
+  .btn{ border-radius:999px !important; padding:.95rem 1.2rem !important; font-weight:700 !important; }
+  .btn-primary{ background:var(--accent) !important; color:var(--accent-ink) !important; }
+  .btn-outline{ border:2px solid var(--blue) !important; color:var(--blue) !important; background:transparent !important; }
+  .btn-wa{ background:var(--success) !important; color:#052e16 !important; }
+</style>
 </head>
 <body>
   <header>
@@ -346,6 +367,7 @@
   </script>
 </body>
 </html>
+
 
 
 
