@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Consórcio Imobiliário • Descontos em Taxa de Administração</title>
+  <meta name="description" content="Cartas de consórcio imobiliário com desconto promocional na taxa de administração. Estratégia de contemplação, lance e alavancagem patrimonial, com atendimento direto com gerente.">
+  <meta name="robots" content="index,follow" />
+  <meta property="og:title" content="Consórcio Imobiliário • Descontos em Taxa de Administração">
+  <meta property="og:description" content="Oportunidade de alavancar patrimônio com cartas de crédito com taxas abaixo do usual. Fale direto no WhatsApp.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --blue:#0F4C81;
+      --gray:#6B7280;
+      --white:#FFFFFF;
+      --orange:#F59E0B;  /* laranja próximo ao da CAIXA, não idêntico */
+      --muted:#F3F4F6;
+      --border:#E5E7EB;
+      --green:#22C55E;
+      --radius:16px;
+      --shadow:0 10px 25px rgba(15,76,129,.12);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--white);color:#0f172a;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial}
+    a{color:inherit;text-decoration:none}
+    .wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+    .btn{display:inline-flex;align-items:center;gap:.6rem;border:none;border-radius:999px;padding:.9rem 1.2rem;font-weight:600;cursor:pointer;transition:.2s box-shadow,.2s transform,.2s background}
+    .btn:hover{transform:translateY(-1px)}
+    .btn:active{transform:translateY(0)}
+    .btn-primary{background:var(--orange);color:#111827;box-shadow:var(--shadow)}
+    .btn-outline{background:transparent;border:2px solid var(--blue);color:var(--blue)}
+    .btn-wa{background:var(--green);color:#052e16}
+    header{
+      background:linear-gradient(180deg, rgba(15,76,129,.06), rgba(255,255,255,1));
+      border-bottom:1px solid var(--border);
+    }
+    .hero{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center;padding:72px 0}
+    .badge{display:inline-flex;align-items:center;gap:.5rem;background:var(--muted);border:1px solid var(--border);padding:.35rem .8rem;border-radius:999px;font-size:.85rem;color:var(--blue);font-weight:600}
+    h1{font-family:Poppins,Inter,system-ui; font-size:clamp(28px,4.4vw,44px); line-height:1.1; margin:16px 0 10px; color:var(--blue)}
+    .sub{font-size:1.05rem;color:var(--gray);max-width:62ch}
+    .panel{background:#fff;border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow);padding:22px}
+    .label{font-size:.9rem;color:#374151;margin-bottom:6px;font-weight:600}
+    .row{display:flex;gap:12px;flex-wrap:wrap}
+    .kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:14px}
+    .kpi{background:var(--muted);border:1px dashed var(--border);border-radius:12px;padding:12px;text-align:center}
+    section{padding:56px 0;border-bottom:1px solid var(--border)}
+    h2{font-family:Poppins,Inter; font-size:clamp(22px,3.5vw,30px); color:#111827; margin:0 0 14px}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .card{background:#fff;border:1px solid var(--border);border-radius:14px;padding:18px}
+    .card h3{margin:0 0 6px;font-size:1.05rem}
+    .muted{color:var(--gray)}
+    .disclaimer{font-size:.9rem;color:#4b5563;background:var(--muted);border:1px solid var(--border);border-radius:12px;padding:14px}
+    footer{padding:32px 0;background:#fff}
+    .center{text-align:center}
+    .small{font-size:.9rem}
+    .pill{display:inline-flex;padding:.35rem .6rem;background:#fff;border:1px solid var(--border);border-radius:999px;font-size:.8rem;color:#111827}
+    .iframe-wrap{position:relative;width:100%;height:720px;border:1px solid var(--border);border-radius:12px;overflow:hidden;background:#fff}
+    .iframe-wrap iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+    @media (max-width:980px){
+      .hero{grid-template-columns:1fr}
+      .cards{grid-template-columns:1fr}
+      .kpis{grid-template-columns:1fr 1fr}
+      .iframe-wrap{height:820px}
+    }
+    @media (max-width:560px){
+      .kpis{grid-template-columns:1fr}
+      .iframe-wrap{height:980px}
+    }
+
+    @media (max-width:560px){
+      .kpis{grid-template-columns:1fr}
+      .iframe-wrap{height:980px}
+    }
+
+    /* Layout do bloco com QR Code */
+    .qr-wrap{
+      display:grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap:18px;
+      align-items:center;
+    }
+    .qr-img{
+      width:220px;
+      max-width:100%;
+      background:#fff;
+      border:1px solid var(--border);
+      border-radius:12px;
+      padding:10px;
+      box-shadow:var(--shadow);
+    }
+    @media (max-width: 700px){
+      .qr-wrap{ grid-template-columns: 1fr; text-align:center; }
+      .qr-img{ margin:6px auto 0; }
+    }
+    
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <div class="hero">
+        <div>
+          <span class="badge">Consórcio Imobiliário • Descontos exclusivos*</span>
+          <h1>Cartas com <span style="color:var(--orange)">taxa de administração com desconto</span> — acesso pontual e atendimento direto</h1>
+          <p class="sub">
+            Oportunidade real de <strong>alavancar patrimônio</strong> com cartas de crédito em momentos-chave, com taxas de administração abaixo do normal.
+            Eu acompanho campanhas com desconto e oriento sua estratégia de <strong>lance</strong> (mínimo, médio e máximo) para otimizar contemplação e ganho.
+          </p>
+
+          <div class="row" style="margin-top:18px; gap:10px;">
+            <a class="btn btn-wa" href="https://wa.me/5531997711422?text=Ol%C3%A1%21%20Tenho%20interesse%20em%20cartas%20de%20cons%C3%B3rcio%20com%20desconto%20na%20taxa%20de%20administra%C3%A7%C3%A3o." target="_blank" rel="noopener">
+              💬 Falar no WhatsApp
+            </a>
+            <a class="btn btn-outline" href="#contato">Quero ser contatado</a>
+          </div>
+
+          <div class="kpis">
+            <div class="kpi"><span class="pill">Atendimento direto com gerente</span></div>
+            <div class="kpi"><span class="pill">Janelas pontuais de desconto</span></div>
+            <div class="kpi"><span class="pill">Estratégia de lance e contemplação</span></div>
+          </div>
+        </div>
+
+        <!-- Painel da direita agora virou atalho para o formulário -->
+        <div class="panel">
+          <strong>Consulta rápida</strong>
+          <p class="muted" style="margin:6px 0 12px">Preencha o formulário com <strong>nome</strong> e <strong>telefone ou e-mail</strong>. Sem spam — assunto exclusivo sobre carta de crédito.</p>
+          <a class="btn btn-primary" href="#contato">Abrir formulário</a>
+          <div class="disclaimer" style="margin-top:14px">
+            <strong>Transparência:</strong> usamos seus dados apenas para contato sobre consórcio. Não compartilhamos com terceiros.
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="wrap" id="sobre">
+      <h2>Sobre o atendimento</h2>
+      <p class="muted">
+        <strong>Gerente.</strong> Você fala diretamente comigo.
+        Acompanho as campanhas de <em>desconto em taxa de administração</em> para maximizar seu ganho na contemplação da carta.
+        Oriento a estratégia de <strong>lance</strong> (mínimo, médio e máximo do grupo) e avalio <strong>oportunidades pontuais</strong> que não estão disponíveis o tempo todo.
+      </p>
+    </section>
+
+    <section class="wrap" id="servicos">
+      <h2>Serviço</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Consulta de taxas com desconto</h3>
+          <p class="muted">Verificação de campanhas ativas e janelas pontuais de cartas com <strong>taxa de administração reduzida</strong>, não comercializadas continuamente.</p>
+        </div>
+        <div class="card">
+          <h3>Estratégia de lance</h3>
+          <p class="muted">Análise de lance mínimo, médio e máximo do grupo para aumentar a chance de contemplação e otimizar o resultado.</p>
+        </div>
+        <div class="card">
+          <h3>Alavancagem patrimonial</h3>
+          <p class="muted">Uso inteligente de cartas de crédito para <strong>aquisição de imóvel</strong> ou <strong>oportunidade de ganho</strong> com eventual venda da carta, conforme regras aplicáveis.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap" id="conteudos">
+  <h2>Por que escolher o Consórcio Caixa?</h2>
+  <p class="muted">
+    O Consórcio Caixa é uma das formas mais inteligentes e seguras de conquistar seu imóvel, 
+    pois une <strong>planejamento financeiro</strong>, <strong>baixo custo</strong> e a <strong>solidez da Caixa Econômica Federal</strong>, 
+    instituição líder e referência em crédito imobiliário no Brasil.
+  </p>
+
+  <div class="cards">
+    <div class="card">
+      <h3>1) Sem juros, apenas taxa de administração</h3>
+      <p class="muted">
+        No consórcio, não há cobrança de juros compostos como em um financiamento. 
+        Você paga apenas uma taxa de administração, muito menor que as taxas de juros tradicionais.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>2) Planejamento e poder de compra</h3>
+      <p class="muted">
+        O consórcio permite se planejar, investir mensalmente e adquirir seu imóvel de forma programada. 
+        Ao ser contemplado, você tem acesso ao crédito integral da carta para comprar ou construir o imóvel desejado.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>3) Solidez e credibilidade da Caixa</h3>
+      <p class="muted">
+        Com a Caixa, você conta com a segurança de uma das maiores instituições financeiras do país, 
+        que garante transparência, acompanhamento online e grupos administrados com rigor e confiança.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>4) Oportunidade de ganho e valorização</h3>
+      <p class="muted">
+        Ao adquirir cartas com <strong>taxas de administração reduzidas</strong>, 
+        você pode utilizá-las como investimento, revendendo ou aplicando estratégias de lance para antecipar a contemplação 
+        e gerar resultados financeiros expressivos.
+      </p>
+    </div>
+  </div>
+
+  <p class="muted" style="margin-top:16px">
+    Em resumo: enquanto o financiamento faz você <strong>pagar juros</strong> para ter o bem hoje, 
+    o consórcio te faz <strong>planejar e investir</strong> para conquistar o bem com economia e estratégia, 
+    com a segurança de quem opera com a <strong>marca Caixa Econômica Federal</strong>.
+  </p>
+
+      <!-- INÍCIO: Simulações (somente página 1, sem download) -->
+<section class="wrap" id="simulacoes">
+  <h2>Exemplos reais de simulações</h2>
+  <p class="muted">Abaixo você visualiza simulações reais de cartas de consórcio com taxa de administração reduzida. Exibição apenas para consulta neste site.</p>
+
+  <div class="cards" style="margin-top:14px">
+    <!-- SIMULAÇÃO 200k -->
+    <div class="card">
+      <h3>Carta de R$ 200.000</h3>
+      <img class="sim-img" src="sim_200k_p1.png" alt="Simulação consórcio 200 mil (página 1)" loading="lazy" />
+      <p class="small muted" style="margin-top:8px">Simulação ilustrativa. Condições sujeitas a alterações conforme campanhas e regulamentos vigentes.</p>
+    </div>
+
+    <!-- SIMULAÇÃO 400k -->
+    <div class="card">
+      <h3>Carta de R$ 400.000</h3>
+      <img class="sim-img" src="sim_400k_p1.png" alt="Simulação consórcio 400 mil (página 1)" loading="lazy" />
+      <p class="small muted" style="margin-top:8px">Simulação ilustrativa. Condições sujeitas a alterações conforme campanhas e regulamentos vigentes.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Modal para zoom (sem download) -->
+<div id="simModal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.7);z-index:9999;align-items:center;justify-content:center;padding:16px">
+  <div style="position:relative;max-width:1200px;width:100%;background:#000;border-radius:12px;overflow:hidden">
+    <button onclick="closeSimModal()" style="position:absolute;right:8px;top:8px;border:none;background:rgba(255,255,255,.9);border-radius:999px;padding:6px 10px;cursor:pointer;font-weight:700">✕</button>
+    <img id="simFull" src="" alt="Visualização da simulação" style="width:100%;height:auto;display:block" draggable="false" />
+  </div>
+</div>
+
+<style>
+  .sim-img{
+    width:100%; height:auto; border:1px solid var(--border);
+    border-radius:12px; box-shadow:var(--shadow);
+    user-select:none; -webkit-user-drag:none; cursor:zoom-in;
+  }
+</style>
+
+<script>
+  // Abre modal de zoom ao clicar na imagem (sem link/sem download)
+  document.addEventListener('click', function(e){
+    const img = e.target.closest('.sim-img');
+    if(!img) return;
+    const modal = document.getElementById('simModal');
+    const full = document.getElementById('simFull');
+    full.src = img.src; // mesma imagem em tamanho maior
+    modal.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+  });
+  function closeSimModal(){
+    const modal = document.getElementById('simModal');
+    const full = document.getElementById('simFull');
+    full.src = '';
+    modal.style.display = 'none';
+    document.body.style.overflow = '';
+  }
+
+  // Pequenas barreiras contra clique direito / arrastar
+  document.addEventListener('contextmenu', function(e){
+    if(e.target.closest('.sim-img')) e.preventDefault();
+  });
+  document.addEventListener('dragstart', function(e){
+    if(e.target.closest('.sim-img')) e.preventDefault();
+  });
+</script>
+<!-- FIM: Simulações -->
+      
+</section>
+
+    <!-- CONTATO COM MICROSOFT FORMS EMBED -->
+    <section class="wrap" id="contato">
+      <h2>Contato</h2>
+      <p class="muted">Preencha o formulário abaixo ou clique para falar comigo pelo WhatsApp.</p>
+
+      <div class="panel" style="margin-bottom:14px">
+        <div class="row" style="margin-bottom:10px">
+          <a class="btn btn-wa" href="https://wa.me/5531997711422?text=Ol%C3%A1%21%20Tenho%20interesse%20em%20carta%20de%20cons%C3%B3rcio%20com%20desconto%20na%20taxa%20de%20administra%C3%A7%C3%A3o." target="_blank" rel="noopener">💬 Falar no WhatsApp</a>
+          <a class="btn btn-outline" href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAa__ZNVIeVUMjhMN0xaWFpEMzBOMTY0TlhaVEdDQlgyQi4u" target="_blank" rel="noopener">Abrir formulário em nova aba</a>
+        </div>
+
+        <!-- IFRAME DO MICROSOFT FORMS -->
+        <div class="iframe-wrap" role="region" aria-label="Formulário de contato">
+          <iframe
+            title="Formulário de contato - Consórcio"
+            src="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAa__ZNVIeVUMjhMN0xaWFpEMzBOMTY0TlhaVEdDQlgyQi4u&embed=true"
+            allowfullscreen
+            webkitallowfullscreen
+            mozallowfullscreen
+          ></iframe>
+        </div>
+
+        <noscript>
+          <p>Seu navegador bloqueou o carregamento do formulário. <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAa__ZNVIeVUMjhMN0xaWFpEMzBOMTY0TlhaVEdDQlgyQi4u" target="_blank" rel="noopener">Clique aqui</a> para abrir em nova aba.</p>
+        </noscript>
+      </div>
+
+<!-- QR CODE DO WHATSAPP -->
+      <div class="panel" id="qr-whats" style="margin-top:14px">
+        <div class="qr-wrap">
+          <div>
+            <h3 style="margin:0 0 6px">Fale comigo por WhatsApp</h3>
+            <p class="muted" style="margin:0 0 12px">
+              Aponte a câmera do celular para o QR Code ou clique no botão abaixo.
+            </p>
+            <a class="btn btn-wa" href="https://wa.me/5531997711422?text=Ol%C3%A1%21%20Tenho%20interesse%20em%20cartas%20de%20cons%C3%B3rcio%20com%20desconto%20na%20taxa%20de%20administra%C3%A7%C3%A3o." target="_blank" rel="noopener">
+              💬 Abrir WhatsApp
+            </a>
+            <div class="small muted" style="margin-top:8px">Número: (31) 99771-1422</div>
+          </div>
+
+          <!-- QR Code clicável -->
+          <a href="https://wa.me/5531997711422?text=Ol%C3%A1%21%20Tenho%20interesse%20em%20cartas%20de%20cons%C3%B3rcio%20com%20desconto%20na%20taxa%20de%20administra%C3%A7%C3%A3o." target="_blank" rel="noopener" aria-label="Abrir WhatsApp pelo QR Code">
+            <img
+              src="whatsapp_qr.png"
+              alt="QR Code do WhatsApp para contato (31) 99771-1422"
+              class="qr-img"
+              loading="lazy"
+              decoding="async"
+            />
+          </a>
+        </div>
+      </div>
+
+      <!-- aviso final já existente -->
+      
+      <div class="disclaimer small">
+        *Descontos em taxa de administração são <strong>pontuais</strong> e dependem de campanhas específicas. Disponibilidade, regras e limites podem variar.
+      </div>
+    </section>
+
+    <section class="wrap" id="comparativo">
+      <h2>Por que o consórcio pode ser matematicamente melhor que o financiamento?</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>1) Não há juros compostos na prestação</h3>
+          <p class="muted">No consórcio você paga <strong>taxa de administração</strong> + fundo de reserva (se houver), diluídos nas parcelas. No financiamento, há <strong>juros compostos</strong> sobre o saldo devedor.</p>
+        </div>
+        <div class="card">
+          <h3>2) Parcela tende a ser menor</h3>
+          <p class="muted">Como não há custo financeiro de juros, a <strong>parcela</strong> do consórcio costuma ser <strong>menor</strong> para o mesmo valor de crédito.</p>
+        </div>
+        <div class="card">
+          <h3>3) Desconto em taxa = ganho direto</h3>
+          <p class="muted">Quando há <strong>desconto na taxa de administração</strong>, o custo total do plano cai e o benefício é <strong>matemático</strong> (menos custo = mais resultado).</p>
+        </div>
+      </div>
+      <p class="muted" style="margin-top:10px">
+        Observação: o consórcio não é imediato como um financiamento; a contemplação ocorre por <strong>sorteio ou lance</strong>. Por isso, a estratégia de lance é fundamental.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap center small muted">
+      <div>© <span id="year"></span> Atendimento especializado em Consórcio Imobiliário</div>
+      <div style="margin-top:6px">Este site é informativo. Consulte regras, contratos e condições vigentes antes de contratar.</div>
+    </div>
+  </footer>
+
+  <script>
+    // Atualiza ano do rodapé
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
+
+
+
