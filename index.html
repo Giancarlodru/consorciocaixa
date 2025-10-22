@@ -63,6 +63,13 @@
     .cards{grid-template-columns:1fr}
   }
    body { outline: 6px solid hotpink !important; }
+
+   .sim-img{
+    width:100%; height:auto; border:1px solid var(--border);
+    border-radius:12px; box-shadow:var(--shadow);
+    user-select:none; -webkit-user-drag:none; cursor:zoom-in;
+  }
+   
 </style>
 </head>
 <body>
@@ -211,14 +218,9 @@
   </div>
 </div>
 
-<style>
-  .sim-img{
-    width:100%; height:auto; border:1px solid var(--border);
-    border-radius:12px; box-shadow:var(--shadow);
-    user-select:none; -webkit-user-drag:none; cursor:zoom-in;
-  }
-</style>
 
+
+      
 <script>
   // Abre modal de zoom ao clicar na imagem (sem link/sem download)
   document.addEventListener('click', function(e){
@@ -346,6 +348,7 @@
   </script>
 </body>
 </html>
+
 
 
 
